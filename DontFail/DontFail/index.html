@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/weatherStyle.css">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script type="text/javascript" src="scripts/weatherScript.js" defer/></script>
+    </head>
+    <body id ="body">
+        <div class ="searchDiv">
+            <input id="location" placeholder="Enter Format: City,Country">
+            <button id="search">Search</button>
+        </div>
+        <br>
+        <div class="btnDiv">
+            <button id="units">Switch To Fahrenheit</button>
+            <button id="weekly">See The Next 7 Days</button>
+            <button id="graphs">Change To Humidity Graph</button>
+        </div>
+         <br>
+        <div class="apiData"></div>
+        <table id="weekTbl">
+            <h3 id="cityHeader"></h3>
+        </table>
+        <div class="canvasDiv">
+            <canvas id="myChart"></canvas>
+        </div>
+    </body>
+    
+</html>
